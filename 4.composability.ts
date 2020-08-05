@@ -70,3 +70,8 @@ Question:
 1) What did you learn from this problem? Why would we want to refactor the code to be
 like the Composable implementation?
 */
+
+
+/* 
+1. Do not repeat yourself (แก้การที่โค้ดซ้ำกัน), สามารถนำไปใช้ต่อในหลายๆที่ได้
+*/

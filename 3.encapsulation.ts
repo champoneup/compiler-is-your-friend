@@ -16,7 +16,7 @@ Questions:
 1) What did you learn from this exercise?
 */
 class SafeDivisor {
-    divisor: number = 1;
+    private divisor: number = 1;
 
     setDivisor(value: number) {
         if (value == 0) {
@@ -36,3 +36,9 @@ function exploit(): number {
     sd.divisor = 0;
     return sd.divide(42); 
 }
+
+console.log(exploit());
+ /* 
+ 1. รู้การใช้ ว่า type script default ค่าของclass จะเป็น publish ทำให้ ค่าตัวแปรที่ประกาศของ class ถูกเปลี่ยนค่า ได้ 
+ เราเลยต้องใช้ private เพื่อป้องกันการเปลี่ยนค่าไม่ใช่ function
+ */
